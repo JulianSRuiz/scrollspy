@@ -1,3 +1,4 @@
+/*Presets...................................*/
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
 
 .nav {
   width: 100%;
-  padding: 25px;
+  padding-top: 25px;
   text-align: center;
   position: fixed;
 }
@@ -25,11 +26,6 @@ a:hover {
   color: #3D4F63;
 }
 
-div {
-  padding: 0 325px;
-  margin: 0 auto;
-}
-
 p {
   margin: 0 auto;
   padding-top: 10px;
@@ -41,6 +37,30 @@ h1 {
   color: #3D4F63;
 }
 
+h2 {
+  font-family: "Petit Formal Script", cursive;
+  color: white;
+}
+
+button {
+  background-color: #3D4F63;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: white;
+  color: #585858;
+}
+
+button:active {
+  background-color: white;
+  color: #3D4F63;
+}
+
+/*Home.......................................*/
 #home {
   background-image: url("./images/mountains.jpeg");
   background-size: cover;
@@ -62,7 +82,7 @@ h1 {
   padding-top: 0;
   font-family: 'Maitree', serif;
   font-size: 1.4em;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.8px;
   text-align: center;
 }
 
@@ -72,11 +92,72 @@ h1 {
   color: white;
 }
 
+#features, #about, .contact-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
 ul {
   list-style: none;
   font-family: 'Maitree', serif;
 }
 
+/*Products............................*/
+#products {
+  padding: 0;
+}
+
+.products {
+  display: flex;
+  background-color: #222222;
+  padding: 0;
+  width: 100%;
+}
+
+.prod {
+  width: 33.3%;
+  padding: 0;
+}
+
+.prod img {
+  width: 100%;
+  margin: 0;
+}
+
+.prod img:hover {
+  opacity: 0.4;
+}
+
+.bassman {
+  height: 29.75%;
+}
+
+.album {
+  height: 46.7%;
+}
+
+/*Features............................*/
+#features {
+  width: 100%;
+  background-color: #222222;
+  padding: 0;
+}
+
+.featurescontainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 300px;
+}
+
+.features {
+  width: 45%;
+  height: 200px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+/*Contact.............................*/
 #contact {
   height: 86vh;
   color: white;
@@ -87,12 +168,40 @@ ul {
 }
 
 .contact-title {
+  padding-left: 325px;
   color: white;
 }
 
-.contact-info {
+.contact-container {
+  width: 50vh;
+  height: 32vh;
   background-color: #ffffff;
-  opacity: 0.7;
+  opacity: 0.8;
+  padding: 20px;
+}
+
+.insidecontact {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.leftcontact {
+  width: 40%;
+  padding: 10px;
+}
+
+.contact-info {
   color: #3D4F63;
-  padding: 30px;
+}
+
+.rightcontact {
+  width: 56%;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.rightcontact img {
+  width: 300px;
+  height: 200px;
 }
