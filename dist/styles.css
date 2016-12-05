@@ -60,6 +60,11 @@ button:active {
   color: #3D4F63;
 }
 
+input {
+  border: 1px solid #3D4F63;
+  border-radius: 3px;
+}
+
 /*Home.......................................*/
 #home {
   background-image: url("./images/mountains.jpeg");
@@ -161,7 +166,7 @@ ul {
 #contact {
   height: 86vh;
   color: white;
-  background-image: url("./images/mj.jpg");
+  background-image: url("./images/mj.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,11 +183,13 @@ ul {
   background-color: #ffffff;
   opacity: 0.8;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .insidecontact {
   display: flex;
   justify-content: space-around;
+  opacity: 1;
 }
 
 
